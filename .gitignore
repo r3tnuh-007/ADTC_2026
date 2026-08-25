@@ -1,1 +1,3 @@
 model/*.gguf
+model
+*.gguf
