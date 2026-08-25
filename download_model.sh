@@ -8,7 +8,7 @@ set -e
 
 # Configurações
 MODEL_DIR="./model"
-MODEL_URL="https://huggingface.co/SEU_USUARIO/gemma-agronomy-gguf/resolve/main/gemma-agronomy-Q4_K_M.gguf"
+MODEL_URL="https://huggingface.co/r3tnuh/gemma-agronomy-gguf/blob/main/gemma-3-1b-it-Q3_K_M.gguf"
 MODEL_FILE="$MODEL_DIR/gemma-agronomy-Q4_K_M.gguf"
 
 # Cria diretório se não existir
