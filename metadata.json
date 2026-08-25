@@ -1,0 +1,37 @@
+{
+  "team_id": "SEU-TEAM-ID-AQUI",
+  "domain": "agriculture",
+  "language_scope": ["en", "yo", "sw", "ha"],
+  "african_alpha_claim": true,
+  "budget_laptop_claim": true,
+  "submitter": {
+    "name": "Antero F. Luis",
+    "email": "anterofranciso@gmail.com",
+    "github_handle": "r3tnuh-007"
+  },
+  "cross_disciplinary_pairing": {
+    "discipline": "agriculture",
+    "load_bearing": true,
+    "description": "AI assistant for smallholder farmers in Africa, providing crop management, pest control, and precision agriculture advice in multiple African languages including Yoruba, Swahili, and Hausa."
+  },
+  "test_prompts": [
+    {
+      "prompt_id": "tp_001",
+      "prompt": "Explain the concept of precision agriculture and how it can benefit smallholder farmers in Africa."
+    },
+    {
+      "prompt_id": "tp_002",
+      "prompt": "Kí ni àgbẹ̀? Ṣe alaye nípa iṣẹ́ àgbẹ̀ ní Nàìjíríà."
+    }
+  ],
+  "model": {
+    "name": "gemma-agronomy-Q4_K_M",
+    "runtime": "llama.cpp",
+    "quantization": "GGUF Q4_K_M",
+    "parameters_estimate": "1.1B",
+    "packaging": "binary_bundle"
+  },
+  "_runtime": {
+    "model_path": "model/gemma-agronomy-Q4_K_M.gguf"
+  }
+}
