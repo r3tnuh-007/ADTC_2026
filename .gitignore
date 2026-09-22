@@ -2,4 +2,9 @@ model/*.gguf
 *.gguf
 __pycache__
 .vscode
-
+.venv
+.venv_api
+__init__.py
+.env
+llama.cpp
+gemma-3-1b-it.Q4_K_M.gguf
