@@ -75,7 +75,7 @@ O^O/ \_/ \    Batch size per device = 2 | Gradient accumulation steps = 4
 /usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
   return original(name)
 
-[1865/3750 1:04:26 < 1:05:12, 0.48 it/s, Epoch 1.49/3]
+[3750/3750 2:09:52, Epoch 3/3]
 Step 	Training Loss
 10 	7.846410
 20 	5.464200
@@ -263,6 +263,195 @@ Step 	Training Loss
 1840 	1.524849
 1850 	1.325028
 1860 	1.528887
+1870 	1.387804
+1880 	1.402370
+1890 	1.441460
+1900 	1.457039
+1910 	1.525718
+1920 	1.525536
+1930 	1.578379
+1940 	1.603043
+1950 	1.467471
+1960 	1.614703
+1970 	1.510569
+1980 	1.512002
+1990 	1.356027
+2000 	1.459208
+2010 	1.525846
+2020 	1.543778
+2030 	1.644766
+2040 	1.307676
+2050 	1.506199
+2060 	1.499801
+2070 	1.411531
+2080 	1.469373
+2090 	1.375330
+2100 	1.549331
+2110 	1.419463
+2120 	1.545158
+2130 	1.414334
+2140 	1.480826
+2150 	1.257539
+2160 	1.496832
+2170 	1.468137
+2180 	1.346448
+2190 	1.473616
+2200 	1.374246
+2210 	1.509438
+2220 	1.516180
+2230 	1.288607
+2240 	1.414564
+2250 	1.563977
+2260 	1.354775
+2270 	1.360889
+2280 	1.359066
+2290 	1.377593
+2300 	1.411465
+2310 	1.329365
+2320 	1.387263
+2330 	1.317687
+2340 	1.435605
+2350 	1.312561
+2360 	1.494724
+2370 	1.339285
+2380 	1.361992
+2390 	1.281412
+2400 	1.365128
+2410 	1.350922
+2420 	1.458312
+2430 	1.401724
+2440 	1.337230
+2450 	1.423422
+2460 	1.503601
+2470 	1.302272
+2480 	1.537642
+2490 	1.262290
+2500 	1.176017
+2510 	1.133082
+2520 	1.163521
+2530 	1.156815
+2540 	1.011083
+2550 	1.069148
+2560 	1.177842
+2570 	1.063472
+2580 	1.136295
+2590 	1.203436
+2600 	1.169944
+2610 	1.072478
+2620 	1.270238
+2630 	1.200323
+2640 	1.228371
+2650 	1.344331
+2660 	1.124883
+2670 	1.147097
+2680 	1.176046
+2690 	1.154224
+2700 	1.177033
+2710 	1.029367
+2720 	1.119950
+2730 	1.134826
+2740 	1.323318
+2750 	1.054273
+2760 	1.146501
+2770 	1.105416
+2780 	1.289950
+2790 	1.172546
+2800 	1.247042
+2810 	1.288537
+2820 	1.095921
+2830 	1.029501
+2840 	1.182774
+2850 	1.083162
+2860 	1.154734
+2870 	1.094130
+2880 	1.221626
+2890 	1.105269
+2900 	1.071681
+2910 	1.079181
+2920 	1.094825
+2930 	1.091735
+2940 	0.968524
+2950 	1.180586
+2960 	1.232069
+2970 	1.109171
+2980 	1.027378
+2990 	1.251512
+3000 	1.235639
+3010 	1.050416
+3020 	1.160962
+3030 	1.121737
+3040 	1.192876
+3050 	1.107199
+3060 	1.184522
+3070 	1.212829
+3080 	1.022925
+3090 	1.212732
+3100 	1.073352
+3110 	1.115615
+3120 	1.120838
+3130 	1.162763
+3140 	1.094798
+3150 	1.089167
+3160 	1.006723
+3170 	1.102217
+3180 	1.092324
+3190 	1.157538
+3200 	0.986861
+3210 	1.246368
+3220 	1.241402
+3230 	1.223384
+3240 	1.164905
+3250 	1.097637
+3260 	1.096999
+3270 	1.119178
+3280 	1.153221
+3290 	1.230531
+3300 	1.197950
+3310 	1.220243
+3320 	1.125633
+3330 	1.252894
+3340 	1.086105
+3350 	1.108913
+3360 	1.179430
+3370 	1.074964
+3380 	1.019946
+3390 	1.159504
+3400 	1.055750
+3410 	1.134746
+3420 	1.150816
+3430 	1.012569
+3440 	1.134529
+3450 	1.047232
+3460 	0.991719
+3470 	1.272567
+3480 	1.085564
+3490 	1.058588
+3500 	1.107961
+3510 	1.206219
+3520 	1.080798
+3530 	1.155018
+3540 	1.181700
+3550 	1.112868
+3560 	1.243060
+3570 	1.121024
+3580 	1.141447
+3590 	1.212123
+3600 	1.096432
+3610 	1.254067
+3620 	1.273460
+3630 	1.136944
+3640 	1.042687
+3650 	0.993982
+3660 	1.028454
+3670 	1.113564
+3680 	1.067330
+3690 	1.100696
+3700 	0.924709
+3710 	1.071341
+3720 	1.267332
+3730 	1.071869
+3740 	1.251555
+3750 	1.214320
 
 Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
 Unsloth: Will smartly offload gradients to save VRAM!
@@ -303,3 +492,51 @@ Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/ch
 Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1700.
 Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1800/tokenizer_config.json.
 Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1800.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1900/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1900.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2000/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2000.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2100/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2100.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2200/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2200.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2300/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2300.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2400/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2400.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2500/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2500.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2600/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2600.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2700/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2700.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2800/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2800.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2900/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2900.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3000/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3000.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3100/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3100.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3200/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3200.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3300/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3300.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3400/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3400.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3500/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3500.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3600/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3600.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3700/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3700.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3750/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3750.
+
+
+💾 Salvando modelo em ./gemma-agronomy-finetuned
+
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned.
+
+✅ Fine-tune concluído com sucesso!
