@@ -1,0 +1,104 @@
+# ==========================================
+# ETAPA 1: MESCLAR OS ADAPTADORES LoRA
+# ==========================================
+
+print("=" * 50)
+print("🔧 ETAPA 1: Mesclando adaptadores LoRA")
+print("=" * 50)
+
+from peft import PeftModel
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+import os
+
+BASE_MODEL = "google/gemma-3-1b-it"
+LORA_PATH = "./gemma-agronomy-finetuned"  # Seu modelo treinado
+MERGED_PATH = "./gemma-agronomy-merged"
+
+# Verificar se o modelo treinado existe
+if not os.path.exists(LORA_PATH):
+    raise FileNotFoundError(f"❌ Modelo treinado não encontrado em {LORA_PATH}")
+
+# Verificar se os adaptadores LoRA existem
+lora_files = os.listdir(LORA_PATH)
+print(f"📁 Arquivos em {LORA_PATH}:")
+for f in lora_files:
+    print(f"   - {f}")
+
+# Carregar modelo base
+print("\n📥 Carregando modelo base...")
+base_model = AutoModelForCausalLM.from_pretrained(
+    BASE_MODEL,
+    torch_dtype=torch.float16,
+    device_map="auto",
+    token=True,
+)
+
+# Carregar adaptadores LoRA
+print("📥 Carregando adaptadores LoRA...")
+model = PeftModel.from_pretrained(base_model, LORA_PATH, token=True)
+
+# Mesclar
+print("🔄 Mesclando...")
+merged_model = model.merge_and_unload()
+
+# Salvar
+print("💾 Salvando modelo mesclado...")
+merged_model.save_pretrained(MERGED_PATH)
+tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, token=True)
+tokenizer.save_pretrained(MERGED_PATH)
+
+print(f"✅ Modelo mesclado salvo em: {MERGED_PATH}")
+
+# Verificar o tamanho dos arquivos
+print("\n📊 Verificando arquivos do modelo mesclado:")
+for f in os.listdir(MERGED_PATH):
+    full_path = os.path.join(MERGED_PATH, f)
+    if os.path.isfile(full_path):
+        size = os.path.getsize(full_path) / (1024**2)
+        print(f"   - {f}: {size:.2f} MB")
+
+
+import json
+
+# Caminho para o config.json do modelo mesclado
+config_path = "./gemma-agronomy-merged/config.json"
+
+# Ler o config.json
+with open(config_path, "r") as f:
+    config = json.load(f)
+
+# Verificar o vocab_size atual
+print(f"vocab_size original: {config.get('vocab_size')}")
+
+# Corrigir para o valor real do tokenizador do Gemma 3
+# O valor real é 262145 (não 262144, não 262208)
+config["vocab_size"] = 262145
+
+# Salvar de volta
+with open(config_path, "w") as f:
+    json.dump(config, f, indent=2)
+
+print(f"vocab_size corrigido: {config['vocab_size']}")
+
+
+# Converter para GGUF (F16)
+!python llama.cpp/convert_hf_to_gguf.py ./gemma-agronomy-merged \
+    --outfile ./gemma-agronomy-f16.gguf \
+    --outtype f16
+
+
+# Compilar o llama.cpp
+!cd llama.cpp && mkdir -p build && cd build && cmake .. && make llama-quantize -j4
+
+# Quantizar para Q4_K_M
+!./llama.cpp/build/bin/llama-quantize \
+    ./gemma-agronomy-f16.gguf \
+    ./gemma-agronomy-Q4_K_M.gguf \
+    Q4_K_M
+
+print("✅ Quantização concluída!")
+
+
+from google.colab import files
+files.download('gemma-agronomy-Q4_K_M.gguf')
