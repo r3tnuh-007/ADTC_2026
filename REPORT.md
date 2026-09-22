@@ -83,7 +83,7 @@ Smallholder farmers across Africa face significant challenges in accessing timel
 ## Model Provenance
 
 **Base Model:** `google/gemma-3-1b-it` from Hugging Face
-**Base Model Commit SHA:** `COLOQUE_O_SHA_AQUI`
+**Base Model Commit SHA:** `dcc83ea841ab6100d6b47a070329e1ba4cf78752`
 **Fine-Tuning Method:** QLoRA (4-bit quantization with LoRA adapters)
 **Training Dataset:** `Professor/agronomy-qa-pairs` (49,821 examples, MIT license)
 **Training Hardware:** NVIDIA Tesla T4 (Google Colab)
