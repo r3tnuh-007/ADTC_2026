@@ -78,3 +78,33 @@ Smallholder farmers across Africa face significant challenges in accessing timel
 | Time to First Token | ~300-500 ms |
 
 **Memory Profiling:**
+
+
+## Model Provenance
+
+**Base Model:** `google/gemma-3-1b-it` from Hugging Face
+**Base Model Commit SHA:** `COLOQUE_O_SHA_AQUI`
+**Fine-Tuning Method:** QLoRA (4-bit quantization with LoRA adapters)
+**Training Dataset:** `Professor/agronomy-qa-pairs` (49,821 examples, MIT license)
+**Training Hardware:** NVIDIA Tesla T4 (Google Colab)
+
+### Before/After Comparison
+
+**Prompt:** "Explain precision agriculture."
+
+**Base Model Output:**
+"Precision agriculture is a farming management concept based on observing, measuring and responding to inter and intra-field variability in crops."
+
+**Fine-Tuned Model Output:**
+"Precision agriculture (kilimo cha usahihi) involves using technology to optimize crop production in African contexts. For smallholder farmers, this means: 1) Using mobile-based soil sensors to determine exact fertilizer needs, 2) Applying water only where needed to conserve scarce resources, 3) Accessing market prices via SMS to sell at the best time. In Nigeria, this can increase maize yields by 20-30% while reducing input costs."
+
+### Proof of Training
+
+All proof-of-training files are in the `provenance/` directory:
+- `adapter_model.safetensors` — LoRA adapter weights
+- `adapter_config.json` — LoRA configuration
+- `training_script.py` — Fine-tuning script used
+- `training_log.csv` — Training loss per step
+- `dataset_sample.jsonl` — Representative dataset sample
+- `checksums.txt` — SHA256 checksums
+- `merge_and_quantize_script.py` — Merge & quantization script
