@@ -1,0 +1,2 @@
+!pip install -q unsloth bitsandbytes
+!pip install -q "transformers>=4.51.0" datasets peft trl accelerate
