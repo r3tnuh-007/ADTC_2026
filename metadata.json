@@ -29,7 +29,8 @@
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
     "parameters_estimate": "1.1B",
-    "packaging": "binary_bundle"
+    "packaging": "binary_bundle",
+    "base_model_commit_sha": "COLOQUE_O_SHA_AQUI"
   },
   "_runtime": {
     "model_path": "model/gemma-agronomy-Q4_K_M.gguf"
