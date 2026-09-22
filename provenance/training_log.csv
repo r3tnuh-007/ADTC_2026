@@ -1,0 +1,305 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==================================================
+🚀 INICIANDO FINE-TUNE GEMMA PARA AGRONOMIA
+==================================================
+
+📥 Carregando dataset...
+
+README.md: 100%
+ 2.04k/2.04k [00:00<00:00, 170kB/s]
+data/train_0.jsonl: reconstructing file: 100%
+  203MB /  203MB, 19.1MB/s  
+data/train_0.jsonl: downloading bytes: 
+  111MB, 10.1MB/s  
+Generating train split: 100%
+ 49821/49821 [00:01<00:00, 34628.03 examples/s]
+
+✅ Dataset carregado com 10000 exemplos.
+📋 Colunas do dataset: ['instruction', 'output', 'enhanced_prompt', 'enhanced_completion']
+
+🔧 Carregando modelo e tokenizador...
+==((====))==  Unsloth 2026.9.8: Fast Gemma3 patching. Transformers: 5.5.0.
+   \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.563 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.11.0+cu128. CUDA: 7.5. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.35. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth: Using float16 precision for gemma3 won't work! Using float32.
+
+Loading weights: 100%
+ 340/340 [00:00<00:00, 815.43it/s]
+
+✅ Modelo carregado com sucesso!
+
+🔄 Filtrando e formatando dataset...
+
+Filter: 100%
+ 10000/10000 [00:00<00:00, 50150.02 examples/s]
+
+✅ Filtrados: 10000 exemplos válidos (de 10000)
+
+Map: 100%
+ 10000/10000 [00:01<00:00, 5373.80 examples/s]
+
+✅ Dataset formatado com sucesso!
+📝 Exemplo:
+<bos><start_of_turn>user
+how does dormancy affects seed germination.<end_of_turn>
+<start_of_turn>model
+allows the seed to delay germination until conditions are more favorable for seedling growth and survival.<end_of_turn>
+...
+
+⚙️ Configurando LoRA...
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+✅ LoRA configurado.
+
+🏋️‍♂️ Iniciando treinamento...
+Unsloth: Switching to float32 training since model cannot work with float16
+Unsloth: We found double BOS tokens - we shall remove one automatically.
+
+Unsloth: Tokenizing ["text"] (num_proc=2): 100%
+ 10000/10000 [00:22<00:00, 1036.30 examples/s]
+
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 10,000 | Num Epochs = 3 | Total steps = 3,750
+O^O/ \_/ \    Batch size per device = 2 | Gradient accumulation steps = 4
+\        /    Data Parallel GPUs = 1 | Total batch size (2 x 4 x 1) = 8
+ "-____-"     Trainable parameters = 23,855,104 of 1,023,741,056 (2.33% trained)
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+
+[1865/3750 1:04:26 < 1:05:12, 0.48 it/s, Epoch 1.49/3]
+Step 	Training Loss
+10 	7.846410
+20 	5.464200
+30 	4.559714
+40 	4.127285
+50 	3.468259
+60 	3.474113
+70 	3.249328
+80 	3.178751
+90 	2.918470
+100 	3.056019
+110 	2.802642
+120 	2.946721
+130 	2.874965
+140 	2.754107
+150 	2.742190
+160 	2.653507
+170 	2.569188
+180 	2.806651
+190 	2.819782
+200 	2.712204
+210 	2.627114
+220 	2.686586
+230 	2.472075
+240 	2.621096
+250 	2.634541
+260 	2.712419
+270 	2.584329
+280 	2.584137
+290 	2.549759
+300 	2.409173
+310 	2.641594
+320 	2.436297
+330 	2.464214
+340 	2.479921
+350 	2.439121
+360 	2.556025
+370 	2.479399
+380 	2.405910
+390 	2.163511
+400 	2.433587
+410 	2.432971
+420 	2.337876
+430 	2.238586
+440 	2.336495
+450 	2.265854
+460 	2.279965
+470 	2.346887
+480 	2.271289
+490 	2.202646
+500 	2.124353
+510 	2.201878
+520 	2.142304
+530 	2.293120
+540 	2.252789
+550 	2.104839
+560 	2.240874
+570 	2.172478
+580 	2.138973
+590 	2.277586
+600 	2.197626
+610 	2.151289
+620 	2.337759
+630 	2.140134
+640 	2.119357
+650 	1.989917
+660 	2.136622
+670 	2.152051
+680 	2.052958
+690 	2.173078
+700 	2.100194
+710 	2.014746
+720 	2.026177
+730 	2.070879
+740 	2.169182
+750 	2.238899
+760 	2.163068
+770 	2.004729
+780 	1.971930
+790 	1.825523
+800 	2.094729
+810 	2.042824
+820 	2.095737
+830 	2.185462
+840 	1.920966
+850 	2.011598
+860 	2.047470
+870 	1.979144
+880 	2.187698
+890 	2.055271
+900 	1.931612
+910 	2.053874
+920 	1.938221
+930 	2.106817
+940 	1.982404
+950 	1.971666
+960 	2.059824
+970 	1.974466
+980 	1.995868
+990 	1.951414
+1000 	1.925647
+1010 	1.925515
+1020 	1.959337
+1030 	1.986995
+1040 	1.937576
+1050 	1.949826
+1060 	1.857755
+1070 	1.913089
+1080 	1.900989
+1090 	1.824892
+1100 	2.003534
+1110 	1.779671
+1120 	1.866334
+1130 	1.894849
+1140 	1.764264
+1150 	1.946479
+1160 	1.983760
+1170 	1.919578
+1180 	1.725937
+1190 	1.957636
+1200 	1.892737
+1210 	1.813124
+1220 	1.897503
+1230 	1.811104
+1240 	1.884841
+1250 	1.577061
+1260 	1.662057
+1270 	1.735483
+1280 	1.650790
+1290 	1.625336
+1300 	1.807777
+1310 	1.603765
+1320 	1.743222
+1330 	1.735245
+1340 	1.594853
+1350 	1.602603
+1360 	1.640037
+1370 	1.555594
+1380 	1.618880
+1390 	1.703499
+1400 	1.567536
+1410 	1.646593
+1420 	1.730245
+1430 	1.667957
+1440 	1.594311
+1450 	1.632839
+1460 	1.711040
+1470 	1.590521
+1480 	1.552628
+1490 	1.595937
+1500 	1.521387
+1510 	1.490144
+1520 	1.591147
+1530 	1.644856
+1540 	1.580416
+1550 	1.529716
+1560 	1.517344
+1570 	1.480593
+1580 	1.429929
+1590 	1.503633
+1600 	1.379711
+1610 	1.510969
+1620 	1.578271
+1630 	1.711507
+1640 	1.681867
+1650 	1.595519
+1660 	1.463426
+1670 	1.468746
+1680 	1.456523
+1690 	1.476003
+1700 	1.622484
+1710 	1.563447
+1720 	1.580395
+1730 	1.522978
+1740 	1.580988
+1750 	1.573995
+1760 	1.473518
+1770 	1.575173
+1780 	1.528685
+1790 	1.451884
+1800 	1.600359
+1810 	1.357052
+1820 	1.612221
+1830 	1.511047
+1840 	1.524849
+1850 	1.325028
+1860 	1.528887
+
+Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
+Unsloth: Will smartly offload gradients to save VRAM!
+
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-100/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-100.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-200/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-200.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-300/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-300.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-400/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-400.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-500/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-500.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-600/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-600.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-700/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-700.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-800/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-800.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-900/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-900.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1000/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1000.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1100/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1100.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1200/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1200.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1300/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1300.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1400/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1400.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1500/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1500.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1600/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1600.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1700/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1700.
+Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1800/tokenizer_config.json.
+Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1800.
