@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>IA · Chat</title>
+  <!-- CSS reference -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Preconnect para fontes e melhor performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Estrutura principal: sidebar + área de chat -->
+  <div class="app-container">
+
+    <!-- MENU LATERAL (histórico da sessão) -->
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Histórico de conversas">
+      <div class="sidebar-header">
+        <h2>🧠 Sessions</h2>
+        <button class="new-session-btn" id="newSessionBtn" aria-label="Nova sessão">+ New</button>
+      </div>
+      <ul class="history-list" id="historyList">
+        <!-- Histórico será injetado via JS -->
+        <li class="history-placeholder">No conversations yet</li>
+      </ul>
+      <div class="sidebar-footer">
+        <span class="session-indicator" id="sessionIndicator">Current Session</span>
+      </div>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL: CHAT -->
+    <main class="chat-area">
+      <!-- Topo: título + controle de voz -->
+      <header class="chat-header">
+        <div class="header-left">
+          <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu lateral">☰</button>
+          <h1>agrAI - Your AI for agriculture consults</h1>
+        </div>
+        <div class="header-right">
+          <button class="tts-toggle" id="ttsToggle" aria-label="Ativar leitura em voz alta">
+            <span class="tts-icon">🔊</span>
+            <span class="tts-label">Voice</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Mensagens do chat -->
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot">
+          <div class="avatar">🤖</div>
+          <div class="bubble">Hello, how can I help you?</div>
+        </div>
+      </div>
+
+      <!-- Rodapé com input + envio -->
+      <footer class="chat-footer">
+        <div class="input-wrapper">
+          <input type="text" id="userInput" placeholder="Escreva sua mensagem..." aria-label="Mensagem" autocomplete="off">
+          <button id="sendBtn" aria-label="Enviar mensagem">➤</button>
+        </div>
+        <div class="typing-indicator" id="typingIndicator">AI is thinking<span>.</span><span>.</span><span>.</span></div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- JS principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>

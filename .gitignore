@@ -1,3 +1,5 @@
 model/*.gguf
-model
 *.gguf
+__pycache__
+.vscode
+

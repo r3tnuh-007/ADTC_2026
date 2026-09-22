@@ -1,0 +1,222 @@
+Fertilizers: The Geopolitical Foundation of Modern Agriculture and the African Context
+Abstract
+
+Fertilizers represent one of the most consequential technological developments in human history—the means by which humanity broke the Malthusian constraints that had limited population growth for millennia. Yet this achievement has come at a cost: dependence on finite resources, vulnerability to geopolitical disruption, and environmental degradation. This dissertation examines fertilizers through a dual lens: as a strategic resource whose history is inseparable from imperialism and conflict, and as a critical input for African agricultural transformation. The analysis traces the evolution from guano and nitrates to the Haber-Bosch process and the phosphate economy, revealing how fertilizer supply chains have shaped and been shaped by geopolitical power. Focusing on Sub-Saharan Africa, the dissertation examines the paradox of low fertilizer use on nutrient-depleted soils, the failure of input-subsidy models, and the policy shift toward holistic soil health approaches embodied in the 2024 Nairobi Declaration. It argues that Africa's fertilizer challenge is not simply a matter of increasing application rates but of building "fertilizer sovereignty"—diversifying nutrient sources, strengthening local production, and integrating mineral fertilizers with agroecological practices to restore soil health and build resilient food systems.
+Part I: The Foundations of Fertilizer Science and History
+Chapter 1: The Chemical Basis of Plant Nutrition
+
+Modern agriculture depends on three primary macronutrients—nitrogen (N), phosphorus (P), and potassium (K)—that together form the foundation of crop productivity. Each plays an essential role in plant physiology: nitrogen is the building block of proteins and chlorophyll; phosphorus is critical for energy transfer, DNA structure, and root development; and potassium regulates water balance, enzyme activation, and carbohydrate metabolism .
+
+Beyond these primary nutrients, crops require secondary nutrients (calcium, magnesium, sulfur) and micronutrients (zinc, boron, manganese) in smaller quantities. The soils of Sub-Saharan Africa present particular challenges: they are often highly weathered, inherently nutrient-poor, and characterized by multiple nutrient deficiencies rather than the single nutrient limitations typical of northern hemisphere soils. Addressing these location-specific deficiencies is crucial for resolving soil health and enhancing crop productivity .
+
+The relationship between fertilizer use and soil health is governed by complex interactions. Crop production is determined by yield-defining factors (radiation, temperature, CO2), yield-limiting factors (water, nutrients), and yield-reducing factors (pests, diseases, pollutants). Fertilizers alleviate nutrient-limiting factors and increase crop yields, but their effectiveness depends on soil organic matter content, water availability, and the presence of other nutrients. Soil acidity, for example, can create "killer thresholds" below which aluminum toxicity prevents crop growth entirely. At the other extreme, soil pH above 9 limits the availability of phosphorus, manganese, zinc, and boron .
+Chapter 2: From Guano to Haber-Bosch—The Strategic History of Fertilizers
+
+The history of fertilizers is not a simple narrative of agricultural progress but a story of geopolitical competition, imperial expansion, and strategic resource control. Before the development of synthetic nitrogen production, the global fertilizer trade was shaped by the quest for naturally occurring nutrient sources .
+
+The first major source was guano—accumulated seabird excrement on the Chincha Islands off the coast of Peru. In the 1840s, Peruvian authorities nationalized guano deposits and granted export monopolies, creating the main source of government revenue for decades. The United States responded by passing the 1856 Guano Islands Act, which allowed American citizens to claim any unoccupied island containing guano on behalf of the United States—a clear assertion of strategic interest in fertilizer resources .
+
+The Chincha Islands War of 1864-1866, in which Spain attempted to seize the guano-producing islands from Peru, was a clear instance of imperial conflict over fertilizer resources . As guano reserves became depleted, attention shifted to Chilean nitrate deposits, with British interests encouraging the War of the Pacific (1879-1884) between Chile, Bolivia, and Peru .
+
+The development of the Haber-Bosch process in 1908-1913 fundamentally transformed the fertilizer landscape. German chemist Fritz Haber demonstrated how to fix atmospheric nitrogen, and Carl Bosch brought the process to commercial scale. The process, which synthesizes ammonia from nitrogen and hydrogen, enabled the production of nitrogen fertilizers independent of natural deposits. However, it also created a dual-use technology: ammonia could be converted into ammonium nitrate for either fertilizer or explosives. The Treaty of Versailles subjected BASF's patents to compulsory licensing precisely because of this strategic significance .
+
+The phosphate story followed a parallel imperial trajectory. France gained control over major phosphate reserves through colonial domination of Tunisia, Algeria, and Morocco. Italy, fearing it would be left behind, launched the 1911 invasion of Libya partly motivated by the prospect of "phosphate El Dorado"—although the much-sought-after discoveries proved disappointing. Italian companies gained direct access to phosphate extraction in Tunisia and Egypt, but under French and British control. Meanwhile, highly exploitative colonial labor regimes in North African mines extracted phosphate that helped lower food costs in Europe .
+
+Today, Morocco remains the dominant player in the phosphate market through the state-controlled OCP, producing more than 30 million tons of phosphate rock annually. The real price of phosphate rock declined dramatically during the second half of the twentieth century—from $40 per ton in the 1960s to less than $30 per ton in the early 2000s—contributing to a sense of fertilizer abundance that obscured underlying vulnerabilities .
+Chapter 3: Price Shocks and Supply Chain Vulnerability
+
+The comfortable assumption of cheap fertilizer availability was shattered by the 2007-2008 price shock. Between April 2007 and September 2008, the price of phosphate rock increased nearly tenfold, from $45 to $430 per ton. While prices declined, they remained three to five times higher than levels of the 1990s. This was followed by another surge after 2021, exacerbated by the Russian invasion of Ukraine, COVID-19 supply chain disruptions, and the 2026 conflict in the Persian Gulf .
+
+These price shocks reveal fundamental vulnerabilities in the global fertilizer system. About one-third of global fertilizer trade flows through the Strait of Hormuz, a strategic chokepoint vulnerable to geopolitical disruption. Fertilizer prices are closely connected to oil and gas prices, which provide the energy and hydrogen inputs for nitrogen fertilizer production and the sulphur for phosphate processing. When shipping through the Strait of Hormuz is disrupted, the impacts cascade through the global food system .
+
+The 2007-2008 crisis was particularly severe for smallholder farmers in the Global South. In India, farmers protested violently against fertilizer shortages, with several casualties. More broadly, the crisis exposed the dependence of developing countries on imported nutrients and their vulnerability to price volatility in global commodity markets .
+Part II: Fertilizers in the African Context
+Chapter 4: The Paradox of Low Fertilizer Use on Depleted Soils
+
+Sub-Saharan Africa presents a striking paradox: the continent's soils are among the most nutrient-depleted in the world, yet fertilizer application rates are the lowest globally. Average fertilizer use in Sub-Saharan Africa is below 20 kg per hectare, compared to over 120 kg per hectare in the European Union . African countries have failed to meet the 2006 Abuja Declaration's target of 50 kg per hectare, and the continent's demand for fertilizer, while growing at 8 percent annually, remains far below global averages .
+
+The consequences of low fertilizer use are severe. Over 65 percent of Sub-Saharan Africa's soils are now biologically depleted and chemically degraded . Nutrient mining—the removal of nutrients through crop production without sufficient and balanced nutrient inputs—is a widespread component of soil degradation. In the intensively cultivated highlands of East Africa, soils lose an estimated 36 kg of nitrogen, 5 kg of phosphorus, and 25 kg of potassium per hectare every year .
+
+This degradation is compounded by the characteristics of African soils. Many are old, weathered Gondwana surfaces with inherently low nutrient content and limited organic matter. Yet yield improvements of 15-30 percent of potential are achievable with appropriate fertilizer application. The new book Feeding Africa's Soils: Fertilisers to Support Africa's Agricultural Transformation finds that increasing targeted fertilizer application by 20 percent would raise yields of rice by 5.1 percent, wheat by 11 percent, and maize by 9.9 percent. Beyond productivity gains, such improvements would permit 2 million hectares of currently cultivated land to be set aside for reforestation .
+Chapter 5: The Polycrisis and Its Impact on Fertilizer Use
+
+The COVID-19 pandemic, the Russian invasion of Ukraine, and the 2026 Persian Gulf conflict have created a "polycrisis" that has severely disrupted fertilizer access for African smallholders. Prices spiked by up to 300 percent since 2021, while more than 75 percent of Africa's soils are already degraded .
+
+The impacts on smallholder farmers have been severe. Research using longitudinal surveys across multiple Sub-Saharan African countries reveals that farmers who were poor before the polycrisis were relatively less likely to use inorganic fertilizer during the crisis. Nearly half of farmers (47 percent) across countries and survey rounds were unable to access their desired quantity of fertilizer, with affordability reported as the main reason for the shortfall. Farmers applying fertilizer used less than half the amount they desired .
+
+Farmers have responded to high prices through coping strategies that may compromise future productivity: applying fertilizer at lower intensity, selling productive assets, and borrowing money. In Ethiopia, high fertilizer prices in 2023 made fertilizer unprofitable for half of maize and teff producers and a third of wheat producers. The gains in yields from agricultural development are at risk of being slowed or even reversed, with disparities between smaller and larger farmers growing .
+
+These impacts reflect structural vulnerabilities in Africa's fertilizer systems. The continent is heavily dependent on imported synthetic fertilizers, draining foreign exchange and undermining economic stability. Fertilizer distribution systems are often unreliable, and smallholders face limited access to credit, infrastructure, and extension services .
+Chapter 6: The Limits of Fertilizer-Centric Approaches
+
+The 2006 Abuja Declaration on Fertilizer for the African Green Revolution represented an ambitious but ultimately flawed approach: targeting increased fertilizer use through national subsidy programs. Decades of prioritizing mineral fertilizers alone have failed to reverse soil degradation or sustainably boost productivity .
+
+Research has long shown that inorganic fertilizers alone cannot restore degraded soils. Their effectiveness is significantly limited in nutrient-poor, organic matter-depleted soils—conditions common across the continent. Studies demonstrate that combining mineral fertilizers with organic matter through integrated soil fertility management (ISFM) offers higher agronomic efficiency, improved nutrient cycling, and sustained productivity .
+
+Input subsidy programs in Ethiopia, Malawi, Kenya, and Nigeria, while intended to scale productivity rapidly, have not yielded transformational outcomes. Fertilizer adoption remains low, and crop yields have stagnated or declined in many countries. While subsidies can increase household grain yields in the short term, overall production and welfare effects tend to be smaller than expected. The emphasis on inorganic fertilizers alone diverges from both scientific principles of soil recapitalization and the vision of a uniquely African Green Revolution .
+
+A related challenge is that subsidies have sometimes reduced attention to good agricultural practices, contributing to monocropping trends that undermine long-term soil health. The scientific foundation laid out by Sanchez and others—that integrated approaches combining mineral and organic inputs are essential—has now found political expression in a major policy shift .
+Chapter 7: The Nairobi Declaration—A Paradigm Shift
+
+The 2024 Africa Fertilizer and Soil Health Summit and the resulting Nairobi Declaration on Fertilizer and Soil Health mark a decisive pivot away from narrow, input-driven strategies toward a holistic soil health paradigm. African leaders acknowledged that the perspective on agricultural sustainability has evolved from a narrow crop productivity focus to a comprehensive systems approach encompassing social, environmental, and economic sustainability .
+
+Key commitments of the Nairobi Declaration include:
+
+    Restoring soil health on at least 30 percent of degraded land by 2034
+
+    Tripling domestic production of organic fertilizer
+
+    Repurposing existing subsidies to support smallholder soil health investments
+
+    Integrating agroforestry, legume intercropping, conservation agriculture, watershed management, and organic fertilizers as essential elements of resilient food systems
+
+This shift reflects a hard-learned lesson: soil fertility cannot be rebuilt through mineral fertilizers alone. The Declaration recognizes that Africa's agricultural transformation must be built on healthier soils that can better withstand drought, support higher yields, and contribute to climate resilience .
+
+However, translating these continental commitments into national action remains a challenge. Africa's policy history is replete with well-meaning frameworks that fell short of delivery—neither the Abuja Declaration nor the 2014 Malabo Declaration were fully realized due to lack of political commitment, weak national alignment, underfunding, and limited accountability. The question now is whether Nairobi will be different .
+Chapter 8: Fertilizer Microdosing—A Precision Approach for Smallholders
+
+Fertilizer microdosing (FMD) offers a promising approach to addressing the challenges of smallholder agriculture: low productivity, limited capital, and high fertilizer costs. FMD involves the application of small amounts of nitrogen and phosphorus fertilizers with seeds at planting time, typically a quarter or half a tea spoon per planting hole .
+
+The evidence for FMD effectiveness is strong, particularly on acid sandy soils. The technology has been proven in many circumstances, but adoption remains far below potential. Key advantages include:
+
+    Improved nutrient efficiency—concentrating small amounts of fertilizer near the seed minimizes nutrient losses and maximizes plant uptake
+
+    Affordability—small quantities reduce the cash constraint that prevents many farmers from purchasing fertilizers
+
+    Risk reduction—limited investment if weather conditions are unfavorable
+
+Scaling FMD requires collaboration among governments, NGOs, and the private sector. Key recommendations include providing small fertilizer packages, developing efficient application technology, integrating FMD into agricultural programs, promoting holistic soil management, and reallocating subsidy funds to support this resilient, low-carbon technology .
+Chapter 9: Organo-Mineral Fertilizers—Blending Organic and Mineral Sources
+
+Organo-mineral fertilizers (OMFs) represent a middle path between mineral-only and organic-only approaches. These products combine mineral nutrients with organic materials such as compost, manure, or biochar, offering several advantages for African agriculture .
+
+Evidence from across Sub-Saharan Africa demonstrates the potential of OMFs:
+
+    Kenya: Compost-based OMFs increased maize yields by approximately 28 percent in sandy-loam settings with moderate rainfall
+
+    Senegal: Biochar-enriched formulations improved fruit yield by approximately 35 percent and enhanced soil water retention and microbial activity
+
+    Ethiopia: Compost-based OMFs were associated with approximately 30 percent increases in soil organic carbon and approximately 40 percent increases in maize yield; community-led composting lowered production costs by approximately 20 percent
+
+    Burkina Faso: Poultry-manure-urea OMFs increased grain yield by approximately 25 percent, reduced weed pressure, and improved nutrient cycling
+
+Persistent constraints include limited credit access (only about 12 percent of Kenyan smallholders have formal credit), expertise gaps, unreliable supply chains, and weak transport infrastructure that raises delivered costs. Adoption in parts of Sub-Saharan Africa remains below 20 percent .
+Chapter 10: Biofertilizers—The Push for Local Production and Fertilizer Sovereignty
+
+The Alliance for Food Sovereignty in Africa (AFSA) has released a policy brief calling for a continental shift from synthetic fertilizers to biofertilizers and biostimulants (B&B) as the foundation of Africa's soil fertility strategy .
+
+Biofertilizers—products containing beneficial microorganisms that enhance nutrient availability—offer a regenerative, low-cost, and homegrown alternative to imported synthetic fertilizers. The brief argues that Africa's dependence on imported synthetic fertilizers is a "triple threat": undermining economic stability, degrading soils, and draining foreign exchange .
+
+Key recommendations include:
+
+    Announcing national biofertilizer transition plans—replacing 50 percent of synthetic fertilizer use by 2030
+
+    Redirecting subsidies toward local B&B production and soil health packages
+
+    Developing local infrastructure for composting, microbial inoculant production, quality testing, and community training
+
+    Harmonizing standards through the African Continental Free Trade Area
+
+    Engaging SMEs, women, and youth as leaders in production, distribution, and innovation
+
+AFSA emphasizes that this transition is not only about replacing inputs but about leading a systemic shift toward agroecological soil health. The vision is a "Made-in-Africa solution" to the fertilizer crisis, capable of restoring soils, creating green jobs, and reducing the continent's external dependence .
+Chapter 11: Precision Digital Tools—The FeSeRWAM Platform
+
+The Fertilizer and Seed Recommendations Map (FeSeRWAM) for West Africa represents an innovative digital approach to improving fertilizer use. The platform provides site-specific agricultural input packages combining improved seed varieties, fertilizer recommendations, and good agricultural practices .
+
+Key features include:
+
+    806 improved varieties available for different crops and agroecological conditions
+
+    64+ fertilizer recommendations developed to improve nutrient management
+
+    27 crops with specific recommendations
+
+    Targeted advisory services for women smallholders, youth, and farmers in remote areas
+
+The platform addresses a critical need: the lack of location-specific recommendations that prevent farmers from making informed decisions about fertilizer application. However, barriers to adoption include limited access to smartphones and internet, low digital literacy, and limited proficiency in English, French, or Portuguese. These challenges are being addressed through extension support, community-based access, and practical training .
+Chapter 12: Low-Tech Alternatives—Practical Solutions for Cost-Constrained Farmers
+
+When fertilizer prices spike, farmers need immediate, practical alternatives. The FarmBizAfrica Fertilizer Switch Kit provides a free, accessible framework for using local materials as substitutes for manufactured fertilizers .
+
+The switch kit is built on three simple inputs:
+
+1. Chicken Manure: Closest organic equivalent to synthetic fertilizer, rich in nitrogen. Must be aged for about two months before use to prevent burning crops. Mixed with maize stalks, bean plants, or crop residues, piled under shade, and turned regularly, it transforms into a dark, crumbly material in six to eight weeks. This combined compost can be applied at any time and provides steady, long-term fertility .
+
+2. Nettle Tea: Stinging nettles (Thabai in Central Kenya, Chisa in Nyanza) are one of the best natural sources of nitrogen and iron. Leaves are placed in a bucket with water and left for about two weeks, producing a liquid fertilizer that works quickly, especially when sprayed onto leaves. Results are visible within days: maize greens up, sukuma becomes more vigorous, and struggling seedlings recover faster. However, nettle tea lacks phosphorus and works best when paired with manure .
+
+3. Compost: Unlike chicken manure alone or nettle tea, compost works steadily in the soil, improving structure, moisture retention, and long-term fertility. Farmers who make and add compost notice their soils hold water longer, crops become more resilient during dry spells, and even small amounts of fertilizer go much further. Materials include animal manure, crop residues, kitchen waste, and pulp from nettle tea .
+
+The switch kit provides a complete seasonal framework: applying compost or aged manure before planting to build soil fertility, using nettle tea during vegetative growth to push leafy growth, and adding more chicken manure mid-season to sustain the crop. Over time, the soil improves, and the need for purchased fertilizer steadily reduces each season .
+Part III: Synthesis and Recommendations
+Chapter 13: Toward Fertilizer Sovereignty
+
+The concept of "fertilizer sovereignty" provides a framework for Africa's approach to soil fertility. It encompasses several interconnected dimensions:
+
+1. Reducing Import Dependence: Africa must reduce its dependence on imported synthetic fertilizers, whose prices are vulnerable to geopolitical disruption. This requires investment in domestic production capacity—phosphate mining, fertilizer blending, and biofertilizer manufacturing—and regional trade facilitated by the African Continental Free Trade Area .
+
+2. Diversifying Nutrient Sources: No single fertilizer source can meet Africa's needs. A portfolio approach is essential: mineral fertilizers for rapid yield response, organic sources for soil health and structure, biological nitrogen fixation through legumes, and biofertilizers for improved nutrient availability .
+
+3. Strengthening Local Production: Locally produced organo-mineral fertilizers and biofertilizers offer advantages over imported products: lower transport costs, adaptation to local conditions, creation of rural employment, and reduced foreign exchange demands .
+
+4. Building Soil Health: Fertilizer alone cannot restore degraded soils. Integrated approaches that combine nutrient application with organic matter management, conservation agriculture, and agroforestry are essential .
+
+5. Empowering Farmers: Access to site-specific recommendations, extension services, and credit is essential for effective fertilizer use. Digital tools like FeSeRWAM can play a role, but must be complemented by in-person extension and practical training .
+Chapter 14: Priorities for Action
+
+Based on the analysis presented, six priority areas emerge for Africa's fertilizer strategy:
+
+1. Implement the Nairobi Declaration: African governments must translate continental commitments into national action plans with clear targets, budgets, and accountability mechanisms. The focus must shift from fertilizer subsidies alone to comprehensive soil health investments .
+
+2. Invest in Local Production: Domestic production of organo-mineral fertilizers, biofertilizers, and blended mineral products must be scaled up. This requires policy support, infrastructure investment, and regulatory frameworks ensuring quality standards .
+
+3. Reform Subsidy Programs: Input subsidies should be repurposed to support integrated soil health approaches, including organic inputs, microdosing, and extension services. Subsidies should be targeted to reach the poorest farmers who are most vulnerable to price shocks .
+
+4. Strengthen Extension Services: Farmers need access to site-specific recommendations, practical training, and ongoing support. Extension systems must reach women farmers and those in remote areas, using both digital tools and in-person advisory services .
+
+5. Build Regional Markets: The African Continental Free Trade Area should be used to harmonize fertilizer standards, reduce trade barriers, and facilitate regional value chains for locally produced inputs .
+
+6. Invest in Research and Innovation: Africa-specific research is needed on soil health thresholds, nutrient management, organic-mineral combinations, and adaptation of technologies like biofertilizers and microdosing to different agroecological zones .
+Chapter 15: The Path Forward
+
+Africa's fertilizer challenge is not simply a technical problem but a political economy problem. The policies, institutions, and investment patterns that have shaped African agriculture reflect historical legacies, interest group pressures, and path dependencies that resist change. Transformation requires not just new technologies but new political settlements that align the incentives of governments, investors, farmers, and consumers around a shared vision of agricultural development .
+
+The opportunity is substantial. Africa possesses phosphate deposits in Morocco, Senegal, Togo, and other countries that could serve as the foundation for domestic fertilizer production. The continent has abundant organic resources—crop residues, manure, compostable waste—that can be converted into soil-building inputs. And Africa has a youthful population that can drive innovation in agricultural technology, processing, and services .
+
+The imperative is clear. With over 65 percent of soils degraded, food imports of $35-80 billion annually, and a population projected to reach 2.5 billion by 2050, Africa cannot afford to maintain the status quo. The continent's soils—its most fundamental natural asset—must be restored and maintained as the foundation for food security, economic development, and climate resilience .
+
+The fertilizer sovereignty agenda offers a path forward: reducing dependence on imports, diversifying nutrient sources, strengthening local production, and integrating mineral fertilizers with organic inputs and good agricultural practices. This is not a rejection of mineral fertilizers but an embrace of a more sophisticated, context-appropriate approach that recognizes soil as a living system requiring balanced nutrient management .
+Conclusion
+
+Fertilizers have been central to the story of human civilization—from the guano wars of the nineteenth century to the Haber-Bosch revolution that freed humanity from dependence on natural nitrogen sources. Yet this technological triumph has created new vulnerabilities: dependence on finite resources, exposure to geopolitical disruption, and environmental degradation through excess application and nutrient pollution.
+
+In Africa, the fertilizer story is one of paradox: the continent with the most nutrient-depleted soils uses the least fertilizer. Decades of input-subsidy programs have failed to transform agricultural productivity, and recent "polycrisis" shocks have exposed the fragility of systems dependent on imported nutrients. The 2024 Nairobi Declaration represents an important policy shift, recognizing that soil health requires integrated approaches combining mineral and organic inputs, conservation agriculture, and agroforestry.
+
+The path forward requires "fertilizer sovereignty"—reducing import dependence, diversifying nutrient sources, strengthening local production, and empowering farmers with knowledge and resources. Practical solutions exist: fertilizer microdosing for resource-constrained smallholders, organo-mineral fertilizers that blend organic and mineral nutrients, biofertilizers produced locally, and digital tools for site-specific recommendations. Low-tech alternatives like chicken manure, nettle tea, and compost provide immediate options when prices spike.
+
+The imperative is clear and urgent. Africa must invest in its soils—the foundation of its food systems, its rural livelihoods, and its long-term prosperity. The tools are available, the knowledge exists, and the political commitment is growing. What is required is sustained action, accountability, and a willingness to embrace approaches that are tailored to Africa's unique conditions. The future of African agriculture—and the well-being of its people—depends on getting this right.
+References
+
+    "Fertiliser: the forgotten history linking the agricultural commodity and empire in wartime." The Conversation. (2026).
+
+    "Fertiliser sovereignty in Africa now!" International Journal for Rural Development. (2026).
+
+    "Fertilizer and soil health for sustained crop production in sub-Saharan Africa: Theory and conceptual framework." npj Sustainable Agriculture. (2026).
+
+    "From fertiliser-centric to holistic soil health investment – Africa's policy shift and pathways to agroecological transformation." International Journal for Rural Development. (2025).
+
+    "Fertiliser microdosing: A cost-effective approach to enhancing cereal yield in smallholder farming systems of sub-Saharan Africa." Tropentag. (2025).
+
+    "An extractive bioeconomy? Phosphate mining, fertilizer commodity chains, and alternative technologies." Sustainability Science. (2022).
+
+    "Smallholder farming, fertilizer use, and the polycrisis period: Cross-country evidence from longitudinal surveys in Sub-Saharan Africa." ScienceDirect. (2025).
+
+    "Global adoption of organo-mineral fertilisers: environmental and policy insights." Discover Agriculture. (2025).
+
+    "Lead the Transition: Biofertilisers & biostimulants for Africa's food sovereignty." Food and Agriculture Organization. (2025).
+
+    "FeSeRWAM: Fertilizer and Seed Recommendations Map for West Africa." Taat-Africa. (2026).
+
+    "From guano to green hydrogen: Food security and fertilizer disputes in international energy law." London School of Economics. (2023).
+
+    "AGRA launch

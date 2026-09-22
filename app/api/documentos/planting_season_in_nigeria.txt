@@ -1,0 +1,110 @@
+The Nigerian Planting Season: Agro-Ecological Rhythms, Climate Disruption, and the Struggle for Food Security
+Abstract
+
+The planting season in Nigeria represents the foundational rhythm of the nation's food system—a period of intense agricultural activity that determines annual harvests, rural livelihoods, and national food security. This dissertation examines the Nigerian planting season as a complex intersection of agro-ecological diversity, climate dynamics, and socioeconomic pressures. The analysis traces the spatial and temporal patterns of planting across Nigeria's seven agro-ecological zones, from the rainforests of the south to the semi-arid plains of the north, demonstrating how rainfall gradients and seasonal rhythms structure agricultural calendars. The dissertation then examines the contemporary crisis facing the planting season: the compounding effects of climate change, which disrupts rainfall patterns and shifts optimal planting dates; escalating insecurity that prevents farmers from accessing their land; and soaring input costs that make farming economically unviable for millions of smallholders. Drawing on recent research and farmer testimony, the dissertation argues that the Nigerian planting season is at a critical juncture. The 2026 season is projected to see up to 35 million Nigerians facing acute hunger, driven by the collapse of productive capacity in the face of these intersecting pressures. It concludes by examining pathways toward resilience, including climate-smart agriculture, input subsidy reforms, and the potential of the AfCFTA to stabilize regional food systems.
+Part I: The Ecological Foundations of the Nigerian Planting Season
+Chapter 1: Nigeria's Agro-Ecological Zones and Their Planting Calendars
+
+Nigeria's agricultural diversity reflects its position as a country spanning multiple agro-ecological zones, from the mangrove swamps of the Niger Delta to the semi-arid Sahel bordering the Sahara Desert. Understanding this diversity is essential for comprehending the planting season, which varies dramatically across the country.
+
+The Southern Rainforest Zone: The southern belt, encompassing the mangrove swamps, freshwater swamps, and tropical rainforests, experiences the heaviest rainfall, with annual precipitation exceeding 2,000mm in many areas. The zone benefits from abundant precipitation and relatively short dry seasons. Root crops are the staples in the south, including cassava, yams, taro, and sweet potatoes, while oil palm, rubber, and cocoa are the main cash crops. The prolonged rainy season in this zone allows for multiple cropping cycles and sometimes double maize production each year, with relatively consistent rainfall supporting agricultural activity throughout much of the year.
+
+The Guinea Savanna (Middle Belt): The Guinea Savanna, sometimes referred to as the middle belt, lies between the arid north and the moist south. This zone experiences a shorter rainy season and a more pronounced dry season, lasting 80 to 140 days depending on latitude. It produces staples such as yams, sorghum, millet, cassava, cowpeas, and corn, with rice an important crop in suitable lowland areas. The middle belt's southern edge represents the lower limits of the northern grain-dominated economy, and sesame is the most significant commercial crop of the zone.
+
+The Northern Savannah (Sudan and Sahel Zones): The northern third of Nigeria experiences a dry season of five to seven months, with annual rainfall ranging from 600mm to as low as 500mm in the extreme north. Staples in the north are millet, cowpeas, and drought-resistant sorghum varieties. Sorghum is Nigeria's most widely cultivated grain, accounting for more than 45 percent of the total area. Wheat is primarily a fadama (lowland) crop, irrigated along broad valley bottoms in the north, especially in the Lake Chad basin. The north's principal commercial crops are cotton and groundnuts.
+
+The spatial distribution of cropland suitability reflects these ecological gradients. Research shows that most areas in the South East, South South, and South West have the most suitable cropland, followed by the North Central regions, while most areas in the North East and North West have higher shares of moderate to low suitability.
+Chapter 2: The Temporal Rhythms of the Planting Season
+
+The Nigerian planting season is governed by rainfall patterns that determine when farmers can plant, what they can grow, and what yields they can expect. In the south, the rainy season typically commences between late March and early April and ends between late October and early November, lasting approximately seven to eight months. This extended season supports multiple cropping cycles.
+
+Research on maize production in the rainforest zone of southwestern Nigeria demonstrates the importance of timing. A study at Ile-Ife found that the first few planting dates in March and April produced the highest grain yields. Planting after the first few rains in March and April was identified as the optimum for the first cropping season, while late July to mid-August was best for the second cropping season in this agroclimatic zone. Planting beyond these periods results in poor grain yield and predisposes the crop to terminal drought, which could result in complete crop failure.
+
+In the northern savannas, the planting window is more constrained. Research on soybean production in the Nigerian savannas evaluated six planting dates from 15 June to 20 July. In the Sudan savanna at BUK-Kano, optimal yields exceeding 1,500 kg ha⁻¹ were achieved when planting varieties TGX-1835-10E and TGX-1951-3F from 15 to 29 June. Planting beyond 29 June reduced yields by 12–55% for one variety and 27–63% for another. For a third variety, planting after 15 June reduced yields by 27–90%. In the Northern Guinea savanna at Zaria, optimal yields were obtained when planting from 15 June to 6 July, with delays beyond these dates significantly reducing yields.
+
+These findings underscore the critical importance of timing in Nigerian agriculture. The planting season is not a single event but a sequence of windows determined by location, crop, and variety.
+Part II: Climate Disruption and the Shifting Planting Season
+Chapter 3: Changing Rainfall Patterns and Optimal Planting Dates
+
+Climate change is fundamentally altering the Nigerian planting season. Increasing delays in the onset of the rainy season and extended dry spells are complicating the determination of optimal planting dates for rain-fed crops, increasing risks for farmers.
+
+Research on optimal maize sowing dates across Nigeria reveals significant shifts. A study using gridded weather and soil data from 1981 to 2019 evaluated 37 potential sowing dates between 1 March and 7 November for each year. The results show that optimum sowing dates significantly vary across the country, with northern Nigeria having notably delayed sowing dates compared to southern Nigeria which has earlier planting dates. Critically, the long-term optimal sowing dates significantly shifted between the 1980s and the current period for most of the country. The most optimum planting dates of southern Nigeria shifted to later sowing dates, while most optimum sowing dates of central and northern Nigeria shifted to earlier sowing dates.
+
+This pattern reflects the complex effects of climate change: in the south, heavier and more prolonged rainfall has pushed optimal planting dates later, while in the north, shortening rainy seasons have pushed optimal planting dates earlier. The variation in optimum sowing dates is greater in wetter agro-ecologies than in drier ones, with changes in climate explaining these shifts more clearly in wetter areas.
+Chapter 4: The Impact of Rainfall Variability on Planting Decisions
+
+Farmers across Nigeria are experiencing the effects of erratic rainfall firsthand. The 2025 Wet Season Crop Production Report by AFEX revealed that erratic rainfall during the 2025 planting season affected farmers significantly, with 19 percent reporting delayed or insufficient rainfall that disrupted planting schedules, and 5 percent experiencing excessive rainfall that impeded cultivation. This variability shows the increasing unpredictability of weather patterns, which continues to complicate farming and reduce productivity.
+
+The All Farmers Association of Nigeria (AFAN) has expressed concern about the delayed onset of rainfall, noting that while May traditionally marks the beginning of intensive farming activities in many parts of the country, rainfall has yet to become fully established in several farming areas.
+
+In response, state governments are attempting to provide guidance. The Abia State Government, for example, released its 2026 Climate Outlook and Agricultural Advisory, drawing on the Nigerian Meteorological Agency's Seasonal Climate Prediction. The outlook projected above-normal rainfall for Abia, with the rainy season commencing between late March and early April. It advised farmers to cultivate raised ridges, plant early-maturing and flood-resistant crop varieties, and ensure proper drainage systems to mitigate flooding risks. The government committed to distributing updated cropping calendars and providing improved, climate-resilient seedlings.
+Part III: The Economic Crisis of the Planting Season
+Chapter 5: Soaring Input Costs and Farmer Retreat
+
+The economic pressures on Nigerian farmers have reached critical levels. As the 2026 planting season approaches, farmers across the country have raised fresh concerns over escalating production costs, warning that the trend could deepen food insecurity.
+
+The AFEX 2025 Wet Season Crop Production Report documented a sharp decline in input utilization: only 62 percent of farmers reported using inputs in 2025, down from 81 percent in 2024. This 19 percentage point drop reflects the escalating cost of farm essentials. The report also found that total cultivated area declined by 8 percent, while input application dropped markedly, averaging a 24 percent reduction across farms.
+
+Farmers describe the situation in stark terms. Jonathan Babangida, a farmer who cultivated rice, beans, maize, and soybeans in 2025, reported: "Chemical fertilisers were very expensive. We bought NPK for between N50,000 and N60,000, while urea sold for N35,000 to N40,000." Herbicides and pesticides surged from about N1,500–N2,000 to as much as N5,000 or N7,000. Tractor hire for harrowing land increased from about N80,000 to N120,000.
+
+Despite these rising costs, returns remain low. Babangida noted that a 100kg bag of maize previously sold for N18,000–N20,000, and although prices have increased to about N25,000, profits remain minimal once storage, packaging, and loan repayment costs are factored in.
+
+Williams Joseph Zamdai, a commercial farmer, described the 2025 season as a total loss: "I spent more than N2.5m on my farm last year, but what I harvested cannot fetch more than N1m in the market." He is considering scaling down to subsistence farming: "We may only farm for our own consumption going forward. Investing heavily in commercial farming now feels like a waste of resources, time, and energy".
+Chapter 6: Insecurity and the Abandonment of Farmlands
+
+Insecurity has emerged as a major constraint on the planting season. Persistent kidnappings, banditry, and attacks on rural settlements are forcing many farmers to abandon their farms or scale down cultivation.
+
+AFAN Vice President Daniel Okafor warned: "Insecurity is not even allowing farmers access to their farms because anyone who leaves home for the farm is not sure of returning alive or without being abducted for ransom". Ongoing clashes between herders and farmers have been a longstanding challenge disrupting agricultural activities in rural communities, with the lack of a lasting solution compounding difficulties.
+
+The consequence is a retreat from agriculture. Some farmers are shifting away from capital-intensive crops such as rice and maize towards soybeans, which require less investment and fertiliser. Others are simply reducing their cultivated area or abandoning farming altogether.
+Chapter 7: Financial Exclusion and the Credit Crunch
+
+Limited access to finance remains a critical barrier to production. The AFEX report found that 48 percent of farmers indicated lack of access to finance as their primary challenge during the cultivation season. The persistent unavailability of affordable credit, coupled with high lending rates, left many smallholders unable to procure essential inputs such as seeds, fertilisers, and agrochemicals.
+
+The effects cascade through the agricultural system: farmers constrained by financial losses and restricted access to credit reduce their cultivated area and input application, which in turn reduces productivity and profitability, perpetuating the cycle of poverty and vulnerability.
+Part IV: The Food Security Crisis and the Path Forward
+Chapter 8: Projected Hunger and the Lean Season
+
+The convergence of climate disruption, economic pressures, and insecurity has created a food security crisis of alarming proportions. The Food and Agriculture Organisation (FAO) and its partners have projected that about 35 million Nigerians could face acute hunger during the June–August 2026 lean season if urgent interventions are not implemented.
+
+This projection reflects the cumulative impact of multiple bad planting seasons. The AFEX report projected declines in major commodities such as maize, paddy rice, cocoa, and ginger due to reduced input application and weaker farmer investment levels. While soybean, sorghum, and sesame are expected to experience moderate growth, buoyed by area expansion and farmer preference for crops requiring fewer inputs, the overall outlook is concerning.
+
+The AFEX report warned that escalating input costs and declining adoption rates pose significant risks to productivity growth, farmer profitability, and Nigeria's capacity to meet both domestic food needs and export potential. "If unaddressed, the trends could exacerbate food insecurity, widen the yield gap with global peers, and diminish the competitiveness of Nigerian commodities".
+Chapter 9: Pathways to Resilience
+
+Despite these challenges, there are pathways toward resilience. The Abia State Government's approach provides a template: releasing climate outlooks, distributing updated cropping calendars, providing improved and climate-resilient seedlings, and strengthening extension services to disseminate timely weather advisories in local languages.
+
+Climate-smart agriculture offers a framework for adaptation. The Abia advisory urged farmers to cultivate raised ridges, plant early-maturing and flood-resistant crop varieties, and ensure proper drainage systems on their farms. These practices can help mitigate the risks of both drought and flooding, which are becoming more common with climate change.
+
+Stakeholders have repeatedly urged the Federal Government to strengthen security in rural communities, expand farmers' access to affordable credit and subsidised inputs, and invest in climate-smart agriculture to avert a deeper food crisis. The AFEX report highlighted clear areas for action: stabilising input supply chains, ensuring policy consistency, expanding access to finance, and promoting the integrated use of fertilisers, improved seeds, and crop protection products.
+
+The African Continental Free Trade Area (AfCFTA) also offers potential for regional food security. By facilitating cross-border trade, it could help stabilize food supplies and reduce the impact of local production shortfalls. However, realizing this potential requires addressing Nigeria's internal production constraints first.
+Conclusion
+
+The Nigerian planting season stands at a critical juncture. The ecological foundations that have sustained agriculture for centuries are being disrupted by climate change, which is shifting optimal planting dates, altering rainfall patterns, and increasing the frequency of extreme weather events. The economic pressures facing farmers are reaching breaking point, with soaring input costs and limited credit driving a retreat from commercial farming. Insecurity is preventing farmers from accessing their land, further reducing productive capacity.
+
+The result is a projected food security crisis of unprecedented proportions, with up to 35 million Nigerians facing acute hunger during the 2026 lean season. This is not simply the result of a single bad season but the cumulative impact of multiple years of declining investment, productivity, and profitability.
+
+Yet there is cause for guarded optimism. The recognition of the crisis is growing, and state governments are beginning to respond with climate advisories, improved seedlings, and extension support. The AFEX report has identified clear areas for action: stabilising input supply chains, ensuring policy consistency, expanding access to finance, and promoting integrated input use. The AfCFTA provides a framework for regional coordination.
+
+The planting season is the foundation of Nigeria's food system. Its collapse would have catastrophic consequences for the nation's food security, rural livelihoods, and economic stability. Investing in its resilience—through climate-smart agriculture, input subsidies, security, and financial inclusion—is not optional but imperative. The future of Nigerian food security depends on getting the planting season right.
+References
+
+    Eseigbe, O.B., Kamara, A.Y., Miko, S., Omoigui, L.O., Solomon, R., Adeleke, M.A., Tofa, A.I., & Jenneh, F. (2024). The Impact of Planting Dates on the Performance of Soybean Varieties in the Nigerian Savannas. FAO AGRIS.
+
+    Planting Season: Insecurity, High Input Costs Threatening Food Production, Say Farmers. (2026). Leadership Newspapers.
+
+    Planting date effects on maize (Zea mays L.) growth and development in the rainforest of southwestern Nigeria. (2026). FAO AGRIS.
+
+    Nigeria: Abia Releases 2026 Climate Outlook, Advises Farmers On Climate-Smart Practices. (2026). allAfrica.
+
+    Cereals and Grains: Nigeria. USDA FAS.
+
+    AFEX report shows 62% drop in farm input usage. (2025). The Guardian Nigeria.
+
+    Spatial and temporal distribution of optimal maize sowing dates in Nigeria. OUCI.
+
+    Spatial Assessment of Land Suitability Potential for Agriculture in Nigeria. (2024). FAO AGRIS.
+
+    Production costs, insecurity force farmers to retreat as planting season approaches. (2026). Businessday Nigeria.
+
