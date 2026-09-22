@@ -1,0 +1,2 @@
+feec3347be5b84a0be639ae789786cc2e11193956be25e802308ada869892601  model/gemma-agronomy-Q4_K_M.gguf
+0b29cffbc4b6690cb177ea968f6af055e3c2c3c566da223eeba5f069d868450a  provenance/adapter_model.safetensors
