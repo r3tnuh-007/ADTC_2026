@@ -150,3 +150,10 @@ prompt = f"""You are an agricultural expert. Use ONLY the context below.
 Context: {context}
 Question: {question}
 Answer:"""
+```
+
+## Author
+
+Name: Antero F. Luis
+GitHub: r3tnuh-007
+Email: anterofranciso@gmail.com

@@ -31,7 +31,7 @@
     "parameters_estimate": "1.5B",
     "packaging": "binary_bundle",
     "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-    "base_model_commit_sha": "COLOQUE_O_SHA_DO_DEEPSEEK_AQUI"
+    "base_model_commit_sha": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562"
   },
   "_runtime": {
     "model_path": "model/deepseek-agronomy-Q4_K_M.gguf"
