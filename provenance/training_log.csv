@@ -1,542 +1,684 @@
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-🦥 Unsloth Zoo will now patch everything to make training faster!
 ==================================================
-🚀 INICIANDO FINE-TUNE GEMMA PARA AGRONOMIA
+🚀 INICIANDO FINE-TUNE DEEPSEEK PARA AGRONOMIA
 ==================================================
 
 📥 Carregando dataset...
-
-README.md: 100%
- 2.04k/2.04k [00:00<00:00, 170kB/s]
-data/train_0.jsonl: reconstructing file: 100%
-  203MB /  203MB, 19.1MB/s  
-data/train_0.jsonl: downloading bytes: 
-  111MB, 10.1MB/s  
-Generating train split: 100%
- 49821/49821 [00:01<00:00, 34628.03 examples/s]
-
-✅ Dataset carregado com 10000 exemplos.
-📋 Colunas do dataset: ['instruction', 'output', 'enhanced_prompt', 'enhanced_completion']
+✅ Dataset carregado com 15000 exemplos.
 
 🔧 Carregando modelo e tokenizador...
-==((====))==  Unsloth 2026.9.8: Fast Gemma3 patching. Transformers: 5.5.0.
+==((====))==  Unsloth 2026.9.11: Fast Qwen2 patching. Transformers: 5.5.0.
    \\   /|    Tesla T4. Num GPUs = 1. Max memory: 14.563 GB. Platform: Linux.
-O^O/ \_/ \    Torch: 2.11.0+cu128. CUDA: 7.5. CUDA Toolkit: 12.8. Triton: 3.6.0
+O^O/ \_/ \    Torch: 2.11.0+cu130. CUDA: 7.5. CUDA Toolkit: 13.0. Triton: 3.6.0
 \        /    Bfloat16 = FALSE. FA [Xformers = 0.0.35. FA2 = False]
  "-____-"     Free license: http://github.com/unslothai/unsloth
 Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Unsloth: Using float16 precision for gemma3 won't work! Using float32.
 
 Loading weights: 100%
- 340/340 [00:00<00:00, 815.43it/s]
+ 339/339 [00:01<00:00, 444.97it/s]
+
+Unsloth: Will load unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit as a legacy tokenizer.
 
 ✅ Modelo carregado com sucesso!
 
 🔄 Filtrando e formatando dataset...
-
-Filter: 100%
- 10000/10000 [00:00<00:00, 50150.02 examples/s]
-
-✅ Filtrados: 10000 exemplos válidos (de 10000)
-
-Map: 100%
- 10000/10000 [00:01<00:00, 5373.80 examples/s]
-
+✅ Filtrados: 15000 exemplos válidos.
 ✅ Dataset formatado com sucesso!
-📝 Exemplo:
-<bos><start_of_turn>user
-how does dormancy affects seed germination.<end_of_turn>
-<start_of_turn>model
-allows the seed to delay germination until conditions are more favorable for seedling growth and survival.<end_of_turn>
-...
 
 ⚙️ Configurando LoRA...
-Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
 ✅ LoRA configurado.
 
 🏋️‍♂️ Iniciando treinamento...
-Unsloth: Switching to float32 training since model cannot work with float16
 Unsloth: We found double BOS tokens - we shall remove one automatically.
 
 Unsloth: Tokenizing ["text"] (num_proc=2): 100%
- 10000/10000 [00:22<00:00, 1036.30 examples/s]
+ 15000/15000 [00:04<00:00, 5610.37 examples/s]
 
 ==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
-   \\   /|    Num examples = 10,000 | Num Epochs = 3 | Total steps = 3,750
-O^O/ \_/ \    Batch size per device = 2 | Gradient accumulation steps = 4
-\        /    Data Parallel GPUs = 1 | Total batch size (2 x 4 x 1) = 8
- "-____-"     Trainable parameters = 23,855,104 of 1,023,741,056 (2.33% trained)
-/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
-  return original(name)
-/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
-  return original(name)
-/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
-  return original(name)
-/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
-  return original(name)
+   \\   /|    Num examples = 15,000 | Num Epochs = 3 | Total steps = 5,625
+O^O/ \_/ \    Batch size per device = 4 | Gradient accumulation steps = 2
+\        /    Data Parallel GPUs = 1 | Total batch size (4 x 2 x 1) = 8
+ "-____-"     Trainable parameters = 17,432,576 of 1,794,520,576 (0.97% trained)
+`use_return_dict` is deprecated! Use `return_dict` instead!
 
-[3750/3750 2:09:52, Epoch 3/3]
-Step 	Training Loss
-10 	7.846410
-20 	5.464200
-30 	4.559714
-40 	4.127285
-50 	3.468259
-60 	3.474113
-70 	3.249328
-80 	3.178751
-90 	2.918470
-100 	3.056019
-110 	2.802642
-120 	2.946721
-130 	2.874965
-140 	2.754107
-150 	2.742190
-160 	2.653507
-170 	2.569188
-180 	2.806651
-190 	2.819782
-200 	2.712204
-210 	2.627114
-220 	2.686586
-230 	2.472075
-240 	2.621096
-250 	2.634541
-260 	2.712419
-270 	2.584329
-280 	2.584137
-290 	2.549759
-300 	2.409173
-310 	2.641594
-320 	2.436297
-330 	2.464214
-340 	2.479921
-350 	2.439121
-360 	2.556025
-370 	2.479399
-380 	2.405910
-390 	2.163511
-400 	2.433587
-410 	2.432971
-420 	2.337876
-430 	2.238586
-440 	2.336495
-450 	2.265854
-460 	2.279965
-470 	2.346887
-480 	2.271289
-490 	2.202646
-500 	2.124353
-510 	2.201878
-520 	2.142304
-530 	2.293120
-540 	2.252789
-550 	2.104839
-560 	2.240874
-570 	2.172478
-580 	2.138973
-590 	2.277586
-600 	2.197626
-610 	2.151289
-620 	2.337759
-630 	2.140134
-640 	2.119357
-650 	1.989917
-660 	2.136622
-670 	2.152051
-680 	2.052958
-690 	2.173078
-700 	2.100194
-710 	2.014746
-720 	2.026177
-730 	2.070879
-740 	2.169182
-750 	2.238899
-760 	2.163068
-770 	2.004729
-780 	1.971930
-790 	1.825523
-800 	2.094729
-810 	2.042824
-820 	2.095737
-830 	2.185462
-840 	1.920966
-850 	2.011598
-860 	2.047470
-870 	1.979144
-880 	2.187698
-890 	2.055271
-900 	1.931612
-910 	2.053874
-920 	1.938221
-930 	2.106817
-940 	1.982404
-950 	1.971666
-960 	2.059824
-970 	1.974466
-980 	1.995868
-990 	1.951414
-1000 	1.925647
-1010 	1.925515
-1020 	1.959337
-1030 	1.986995
-1040 	1.937576
-1050 	1.949826
-1060 	1.857755
-1070 	1.913089
-1080 	1.900989
-1090 	1.824892
-1100 	2.003534
-1110 	1.779671
-1120 	1.866334
-1130 	1.894849
-1140 	1.764264
-1150 	1.946479
-1160 	1.983760
-1170 	1.919578
-1180 	1.725937
-1190 	1.957636
-1200 	1.892737
-1210 	1.813124
-1220 	1.897503
-1230 	1.811104
-1240 	1.884841
-1250 	1.577061
-1260 	1.662057
-1270 	1.735483
-1280 	1.650790
-1290 	1.625336
-1300 	1.807777
-1310 	1.603765
-1320 	1.743222
-1330 	1.735245
-1340 	1.594853
-1350 	1.602603
-1360 	1.640037
-1370 	1.555594
-1380 	1.618880
-1390 	1.703499
-1400 	1.567536
-1410 	1.646593
-1420 	1.730245
-1430 	1.667957
-1440 	1.594311
-1450 	1.632839
-1460 	1.711040
-1470 	1.590521
-1480 	1.552628
-1490 	1.595937
-1500 	1.521387
-1510 	1.490144
-1520 	1.591147
-1530 	1.644856
-1540 	1.580416
-1550 	1.529716
-1560 	1.517344
-1570 	1.480593
-1580 	1.429929
-1590 	1.503633
-1600 	1.379711
-1610 	1.510969
-1620 	1.578271
-1630 	1.711507
-1640 	1.681867
-1650 	1.595519
-1660 	1.463426
-1670 	1.468746
-1680 	1.456523
-1690 	1.476003
-1700 	1.622484
-1710 	1.563447
-1720 	1.580395
-1730 	1.522978
-1740 	1.580988
-1750 	1.573995
-1760 	1.473518
-1770 	1.575173
-1780 	1.528685
-1790 	1.451884
-1800 	1.600359
-1810 	1.357052
-1820 	1.612221
-1830 	1.511047
-1840 	1.524849
-1850 	1.325028
-1860 	1.528887
-1870 	1.387804
-1880 	1.402370
-1890 	1.441460
-1900 	1.457039
-1910 	1.525718
-1920 	1.525536
-1930 	1.578379
-1940 	1.603043
-1950 	1.467471
-1960 	1.614703
-1970 	1.510569
-1980 	1.512002
-1990 	1.356027
-2000 	1.459208
-2010 	1.525846
-2020 	1.543778
-2030 	1.644766
-2040 	1.307676
-2050 	1.506199
-2060 	1.499801
-2070 	1.411531
-2080 	1.469373
-2090 	1.375330
-2100 	1.549331
-2110 	1.419463
-2120 	1.545158
-2130 	1.414334
-2140 	1.480826
-2150 	1.257539
-2160 	1.496832
-2170 	1.468137
-2180 	1.346448
-2190 	1.473616
-2200 	1.374246
-2210 	1.509438
-2220 	1.516180
-2230 	1.288607
-2240 	1.414564
-2250 	1.563977
-2260 	1.354775
-2270 	1.360889
-2280 	1.359066
-2290 	1.377593
-2300 	1.411465
-2310 	1.329365
-2320 	1.387263
-2330 	1.317687
-2340 	1.435605
-2350 	1.312561
-2360 	1.494724
-2370 	1.339285
-2380 	1.361992
-2390 	1.281412
-2400 	1.365128
-2410 	1.350922
-2420 	1.458312
-2430 	1.401724
-2440 	1.337230
-2450 	1.423422
-2460 	1.503601
-2470 	1.302272
-2480 	1.537642
-2490 	1.262290
-2500 	1.176017
-2510 	1.133082
-2520 	1.163521
-2530 	1.156815
-2540 	1.011083
-2550 	1.069148
-2560 	1.177842
-2570 	1.063472
-2580 	1.136295
-2590 	1.203436
-2600 	1.169944
-2610 	1.072478
-2620 	1.270238
-2630 	1.200323
-2640 	1.228371
-2650 	1.344331
-2660 	1.124883
-2670 	1.147097
-2680 	1.176046
-2690 	1.154224
-2700 	1.177033
-2710 	1.029367
-2720 	1.119950
-2730 	1.134826
-2740 	1.323318
-2750 	1.054273
-2760 	1.146501
-2770 	1.105416
-2780 	1.289950
-2790 	1.172546
-2800 	1.247042
-2810 	1.288537
-2820 	1.095921
-2830 	1.029501
-2840 	1.182774
-2850 	1.083162
-2860 	1.154734
-2870 	1.094130
-2880 	1.221626
-2890 	1.105269
-2900 	1.071681
-2910 	1.079181
-2920 	1.094825
-2930 	1.091735
-2940 	0.968524
-2950 	1.180586
-2960 	1.232069
-2970 	1.109171
-2980 	1.027378
-2990 	1.251512
-3000 	1.235639
-3010 	1.050416
-3020 	1.160962
-3030 	1.121737
-3040 	1.192876
-3050 	1.107199
-3060 	1.184522
-3070 	1.212829
-3080 	1.022925
-3090 	1.212732
-3100 	1.073352
-3110 	1.115615
-3120 	1.120838
-3130 	1.162763
-3140 	1.094798
-3150 	1.089167
-3160 	1.006723
-3170 	1.102217
-3180 	1.092324
-3190 	1.157538
-3200 	0.986861
-3210 	1.246368
-3220 	1.241402
-3230 	1.223384
-3240 	1.164905
-3250 	1.097637
-3260 	1.096999
-3270 	1.119178
-3280 	1.153221
-3290 	1.230531
-3300 	1.197950
-3310 	1.220243
-3320 	1.125633
-3330 	1.252894
-3340 	1.086105
-3350 	1.108913
-3360 	1.179430
-3370 	1.074964
-3380 	1.019946
-3390 	1.159504
-3400 	1.055750
-3410 	1.134746
-3420 	1.150816
-3430 	1.012569
-3440 	1.134529
-3450 	1.047232
-3460 	0.991719
-3470 	1.272567
-3480 	1.085564
-3490 	1.058588
-3500 	1.107961
-3510 	1.206219
-3520 	1.080798
-3530 	1.155018
-3540 	1.181700
-3550 	1.112868
-3560 	1.243060
-3570 	1.121024
-3580 	1.141447
-3590 	1.212123
-3600 	1.096432
-3610 	1.254067
-3620 	1.273460
-3630 	1.136944
-3640 	1.042687
-3650 	0.993982
-3660 	1.028454
-3670 	1.113564
-3680 	1.067330
-3690 	1.100696
-3700 	0.924709
-3710 	1.071341
-3720 	1.267332
-3730 	1.071869
-3740 	1.251555
-3750 	1.214320
-
-Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
 Unsloth: Will smartly offload gradients to save VRAM!
 
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-100/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-100.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-200/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-200.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-300/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-300.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-400/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-400.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-500/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-500.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-600/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-600.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-700/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-700.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-800/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-800.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-900/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-900.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1000/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1000.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1100/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1100.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1200/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1200.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1300/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1300.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1400/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1400.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1500/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1500.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1600/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1600.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1700/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1700.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1800/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1800.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-1900/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-1900.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2000/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2000.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2100/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2100.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2200/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2200.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2300/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2300.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2400/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2400.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2500/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2500.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2600/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2600.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2700/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2700.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2800/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2800.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-2900/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-2900.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3000/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3000.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3100/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3100.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3200/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3200.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3300/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3300.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3400/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3400.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3500/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3500.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3600/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3600.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3700/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3700.
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/checkpoint-3750/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned/checkpoint-3750.
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:4091: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:4091: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:4091: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+/usr/local/lib/python3.13/dist-packages/unsloth/import_fixes.py:4091: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+
+[5625/5625 1:44:33, Epoch 3/3]
+Step 	Training Loss
+10 	6.906272
+20 	6.474516
+30 	6.285589
+40 	5.481675
+50 	5.100873
+60 	4.774300
+70 	4.474380
+80 	4.537936
+90 	4.795191
+100 	4.588712
+110 	4.002683
+120 	4.222765
+130 	4.046994
+140 	4.265790
+150 	3.866176
+160 	3.943241
+170 	4.236943
+180 	4.005285
+190 	3.648737
+200 	4.215528
+210 	3.809986
+220 	3.666021
+230 	3.882045
+240 	3.856427
+250 	3.767778
+260 	3.801236
+270 	3.796835
+280 	3.567881
+290 	3.758057
+300 	3.454771
+310 	3.621345
+320 	3.517396
+330 	3.358007
+340 	3.874333
+350 	3.344456
+360 	3.480217
+370 	3.627124
+380 	3.252956
+390 	3.430244
+400 	3.496507
+410 	3.294867
+420 	3.358147
+430 	3.411905
+440 	3.325827
+450 	3.245360
+460 	3.531303
+470 	3.135470
+480 	3.383905
+490 	3.194284
+500 	3.364205
+510 	3.289185
+520 	3.325582
+530 	3.171117
+540 	3.185552
+550 	3.090370
+560 	3.225161
+570 	3.103937
+580 	3.242765
+590 	3.399804
+600 	3.185114
+610 	3.189764
+620 	3.306576
+630 	3.013733
+640 	3.078863
+650 	3.225003
+660 	3.144637
+670 	2.985194
+680 	3.048607
+690 	3.051302
+700 	3.207541
+710 	3.139674
+720 	3.016657
+730 	3.244828
+740 	3.166327
+750 	2.938910
+760 	3.241070
+770 	3.051849
+780 	2.914830
+790 	2.938053
+800 	2.993975
+810 	2.973426
+820 	3.062699
+830 	2.928890
+840 	3.002263
+850 	2.976489
+860 	2.959415
+870 	2.854767
+880 	2.766343
+890 	2.757436
+900 	3.077394
+910 	2.991283
+920 	2.915960
+930 	3.016877
+940 	2.846112
+950 	2.722452
+960 	2.907911
+970 	2.925325
+980 	2.939473
+990 	2.968218
+1000 	2.884915
+1010 	2.818837
+1020 	2.711191
+1030 	2.877840
+1040 	2.898187
+1050 	2.773185
+1060 	2.677263
+1070 	2.937061
+1080 	2.873885
+1090 	2.724355
+1100 	2.722657
+1110 	2.867567
+1120 	2.739552
+1130 	2.755566
+1140 	2.697064
+1150 	2.847704
+1160 	2.915771
+1170 	2.920303
+1180 	2.866127
+1190 	2.803778
+1200 	2.673715
+1210 	2.708514
+1220 	2.698588
+1230 	2.884392
+1240 	2.717448
+1250 	2.777617
+1260 	2.513407
+1270 	2.607170
+1280 	2.594044
+1290 	2.691575
+1300 	2.636016
+1310 	2.446745
+1320 	2.565525
+1330 	2.760517
+1340 	2.717255
+1350 	2.601650
+1360 	2.696378
+1370 	2.659570
+1380 	2.640835
+1390 	2.594326
+1400 	2.773239
+1410 	2.788485
+1420 	2.586513
+1430 	2.836500
+1440 	2.623591
+1450 	2.667529
+1460 	2.564923
+1470 	2.585624
+1480 	2.843109
+1490 	2.648237
+1500 	2.769877
+1510 	2.244791
+1520 	2.616564
+1530 	2.660160
+1540 	2.683118
+1550 	2.410070
+1560 	2.589159
+1570 	2.757786
+1580 	2.502919
+1590 	2.701194
+1600 	2.718858
+1610 	2.624487
+1620 	2.364051
+1630 	2.710380
+1640 	2.484434
+1650 	2.471179
+1660 	2.485606
+1670 	2.576697
+1680 	2.487789
+1690 	2.550701
+1700 	2.533979
+1710 	2.607799
+1720 	2.543557
+1730 	2.479119
+1740 	2.560795
+1750 	2.580523
+1760 	2.315944
+1770 	2.543009
+1780 	2.289984
+1790 	2.649090
+1800 	2.540536
+1810 	2.466701
+1820 	2.622136
+1830 	2.599057
+1840 	2.447240
+1850 	2.408585
+1860 	2.427518
+1870 	2.387599
+1880 	2.410893
+1890 	2.456102
+1900 	2.217274
+1910 	2.525092
+1920 	2.508034
+1930 	2.466361
+1940 	2.340094
+1950 	2.475319
+1960 	2.337480
+1970 	2.324023
+1980 	2.308240
+1990 	2.290875
+2000 	2.146312
+2010 	2.392617
+2020 	2.400679
+2030 	2.293874
+2040 	2.287356
+2050 	2.150569
+2060 	2.376075
+2070 	2.371765
+2080 	2.430353
+2090 	2.425955
+2100 	2.130389
+2110 	2.374545
+2120 	2.310308
+2130 	2.337872
+2140 	2.243215
+2150 	2.208620
+2160 	2.193323
+2170 	2.281438
+2180 	2.239473
+2190 	2.494760
+2200 	2.340635
+2210 	2.264079
+2220 	2.319330
+2230 	2.198474
+2240 	2.310250
+2250 	2.383069
+2260 	2.239632
+2270 	2.263081
+2280 	2.347906
+2290 	2.203138
+2300 	2.466985
+2310 	2.199809
+2320 	2.135210
+2330 	2.235134
+2340 	2.288889
+2350 	2.086485
+2360 	2.042526
+2370 	2.251549
+2380 	2.110244
+2390 	2.208842
+2400 	2.306356
+2410 	2.232346
+2420 	2.327393
+2430 	2.295075
+2440 	2.185961
+2450 	2.147992
+2460 	2.407391
+2470 	2.275139
+2480 	2.206433
+2490 	2.262769
+2500 	2.151059
+2510 	2.219750
+2520 	2.281113
+2530 	2.309655
+2540 	2.211082
+2550 	2.298229
+2560 	2.214347
+2570 	2.162785
+2580 	2.308231
+2590 	2.180208
+2600 	2.278507
+2610 	2.205851
+2620 	2.138700
+2630 	2.147181
+2640 	1.988544
+2650 	2.316464
+2660 	2.216837
+2670 	2.124280
+2680 	2.248700
+2690 	2.299183
+2700 	2.113805
+2710 	2.206474
+2720 	2.241227
+2730 	2.184466
+2740 	2.216651
+2750 	2.104108
+2760 	2.152199
+2770 	2.271099
+2780 	2.207054
+2790 	2.354242
+2800 	2.175312
+2810 	2.043827
+2820 	2.152713
+2830 	2.014628
+2840 	2.126720
+2850 	2.120570
+2860 	2.179033
+2870 	2.006983
+2880 	2.261267
+2890 	2.220969
+2900 	2.100141
+2910 	2.074757
+2920 	2.211732
+2930 	2.030903
+2940 	2.038220
+2950 	2.259252
+2960 	2.106594
+2970 	2.209128
+2980 	2.274204
+2990 	2.136977
+3000 	2.168945
+3010 	1.929785
+3020 	2.208465
+3030 	2.243710
+3040 	2.169139
+3050 	1.968432
+3060 	2.081126
+3070 	2.080617
+3080 	2.233415
+3090 	2.153056
+3100 	2.297792
+3110 	2.255225
+3120 	2.187244
+3130 	2.096178
+3140 	2.147113
+3150 	2.136256
+3160 	2.153447
+3170 	2.143519
+3180 	1.980980
+3190 	2.066879
+3200 	2.109375
+3210 	1.984515
+3220 	2.016034
+3230 	2.160488
+3240 	2.144723
+3250 	1.966395
+3260 	2.156476
+3270 	2.063405
+3280 	2.121128
+3290 	2.009866
+3300 	2.071164
+3310 	1.991895
+3320 	2.050598
+3330 	2.081695
+3340 	2.210206
+3350 	2.031264
+3360 	1.919431
+3370 	2.012166
+3380 	2.197842
+3390 	2.032245
+3400 	2.067964
+3410 	2.069620
+3420 	2.126599
+3430 	2.086809
+3440 	2.115171
+3450 	1.937252
+3460 	2.140663
+3470 	2.130134
+3480 	2.035269
+3490 	2.045943
+3500 	2.044705
+3510 	2.033932
+3520 	2.000329
+3530 	2.130526
+3540 	2.009668
+3550 	2.134195
+3560 	1.921630
+3570 	2.127806
+3580 	1.957394
+3590 	2.204091
+3600 	1.944431
+3610 	2.206782
+3620 	1.905087
+3630 	2.099113
+3640 	2.141101
+3650 	1.945218
+3660 	2.082899
+3670 	1.996076
+3680 	2.022466
+3690 	1.889475
+3700 	2.143551
+3710 	2.118497
+3720 	2.126883
+3730 	1.890469
+3740 	2.019863
+3750 	1.972432
+3760 	1.908113
+3770 	1.894589
+3780 	1.788148
+3790 	1.702551
+3800 	2.020936
+3810 	1.956848
+3820 	1.958177
+3830 	1.923935
+3840 	1.810211
+3850 	2.018585
+3860 	1.847473
+3870 	1.897868
+3880 	1.930288
+3890 	1.853256
+3900 	1.851742
+3910 	1.793694
+3920 	1.987598
+3930 	1.852806
+3940 	1.941676
+3950 	1.949384
+3960 	1.977250
+3970 	1.915039
+3980 	1.907907
+3990 	1.976667
+4000 	1.905294
+4010 	1.832640
+4020 	1.963615
+4030 	1.804621
+4040 	1.837057
+4050 	1.800343
+4060 	1.675976
+4070 	1.912353
+4080 	1.794852
+4090 	1.691446
+4100 	1.820473
+4110 	1.986179
+4120 	1.717063
+4130 	1.778680
+4140 	1.782657
+4150 	1.970785
+4160 	1.886044
+4170 	1.865987
+4180 	1.743856
+4190 	1.982385
+4200 	1.786988
+4210 	1.980010
+4220 	1.696947
+4230 	1.830794
+4240 	1.946471
+4250 	1.980900
+4260 	1.983949
+4270 	1.823636
+4280 	1.599535
+4290 	1.865462
+4300 	1.831124
+4310 	1.915154
+4320 	2.039276
+4330 	1.978147
+4340 	1.910044
+4350 	1.889606
+4360 	1.850383
+4370 	1.867200
+4380 	1.653844
+4390 	1.780012
+4400 	1.863043
+4410 	1.828620
+4420 	1.876199
+4430 	1.791620
+4440 	1.846702
+4450 	1.906834
+4460 	1.938212
+4470 	1.911259
+4480 	1.731325
+4490 	1.816525
+4500 	1.902545
+4510 	1.886854
+4520 	1.945330
+4530 	1.614206
+4540 	1.877566
+4550 	1.857076
+4560 	1.839921
+4570 	1.964222
+4580 	1.893031
+4590 	1.820823
+4600 	1.925571
+4610 	1.635372
+4620 	1.959056
+4630 	1.768911
+4640 	1.681871
+4650 	1.742531
+4660 	1.853419
+4670 	1.784818
+4680 	1.742582
+4690 	1.801836
+4700 	1.843232
+4710 	1.824575
+4720 	1.829504
+4730 	1.859074
+4740 	1.807183
+4750 	1.786113
+4760 	1.735934
+4770 	1.953027
+4780 	1.850633
+4790 	1.883859
+4800 	1.874380
+4810 	1.777530
+4820 	1.933199
+4830 	1.862751
+4840 	1.930298
+4850 	1.954861
+4860 	1.869936
+4870 	1.676563
+4880 	1.702212
+4890 	1.768095
+4900 	1.859013
+4910 	1.785195
+4920 	1.777382
+4930 	1.923638
+4940 	1.621916
+4950 	1.658689
+4960 	1.853095
+4970 	1.891656
+4980 	1.760911
+4990 	1.767599
+5000 	1.997043
+5010 	1.897066
+5020 	1.833026
+5030 	1.698788
+5040 	1.897423
+5050 	1.833360
+5060 	1.890722
+5070 	1.773265
+5080 	1.823266
+5090 	1.783211
+5100 	1.799435
+5110 	1.851163
+5120 	1.852297
+5130 	1.891611
+5140 	1.901876
+5150 	2.059961
+5160 	1.731285
+5170 	1.885066
+5180 	1.786204
+5190 	1.682097
+5200 	1.839973
+5210 	1.810905
+5220 	1.866571
+5230 	1.803778
+5240 	1.941056
+5250 	1.682595
+5260 	1.803508
+5270 	1.974145
+5280 	1.920833
+5290 	1.952578
+5300 	1.671056
+5310 	2.027525
+5320 	1.927114
+5330 	1.852338
+5340 	1.790312
+5350 	1.633978
+5360 	1.887681
+5370 	1.755457
+5380 	2.141762
+5390 	1.768267
+5400 	1.717225
+5410 	1.718741
+5420 	1.794995
+5430 	1.937242
+5440 	1.853331
+5450 	1.790125
+5460 	1.926595
+5470 	1.770962
+5480 	1.752927
+5490 	1.827596
+5500 	1.629144
+5510 	1.886859
+5520 	1.701548
+5530 	1.810279
+5540 	1.910031
+5550 	1.832286
+5560 	1.983160
+5570 	1.785608
+5580 	1.957681
+5590 	1.741032
+5600 	1.973965
+5610 	1.910406
+5620 	1.750122
+
+Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
+
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-100/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-200/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-300/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-400/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-500/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-600/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-700/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-800/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-900/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1000/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1100/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1200/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1300/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1400/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1500/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1600/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1700/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1800/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-1900/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2000/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2100/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2200/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2300/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2400/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2500/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2600/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2700/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2800/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-2900/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3000/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3100/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3200/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3300/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3400/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3500/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3600/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3700/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3800/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-3900/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4000/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4100/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4200/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4300/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4400/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4500/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4600/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4700/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4800/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-4900/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5000/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5100/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5200/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5300/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5400/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5500/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5600/tokenizer_config.json.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/checkpoint-5625/tokenizer_config.json.
 
 
-💾 Salvando modelo em ./gemma-agronomy-finetuned
+💾 Salvando modelo em ./drive/MyDrive/deepseek-agronomy-finetuned
 
-Unsloth: Restored added_tokens_decoder metadata in ./gemma-agronomy-finetuned/tokenizer_config.json.
-Unsloth: Preserved sentencepiece asset `tokenizer.model` in ./gemma-agronomy-finetuned.
+Unsloth: Restored added_tokens_decoder metadata in ./drive/MyDrive/deepseek-agronomy-finetuned/tokenizer_config.json.
 
 ✅ Fine-tune concluído com sucesso!

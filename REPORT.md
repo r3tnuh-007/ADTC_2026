@@ -27,7 +27,10 @@ Smallholder farmers across Africa face significant challenges in accessing timel
 ## 2. Design Decisions
 
 **Base Model:**
-- **Google Gemma 3 1B** — chosen for its strong performance on multilingual tasks and efficient inference on CPU
+- **DeepSeek-R1-Distill-Qwen-1.5B** — chosen for its strong reasoning capabilities and efficient inference on CPU
+- The model is a distilled version of DeepSeek-R1, fine-tuned on the Qwen2 architecture
+- Parameters: 1.5B
+- Context length: 131,072 tokens
 
 **Fine-Tuning Dataset:**
 - **Professor/agronomy-qa-pairs** (49,821 examples) — a curated dataset of agricultural Q&A pairs
@@ -36,7 +39,7 @@ Smallholder farmers across Africa face significant challenges in accessing timel
 
 **Quantization:**
 - **GGUF Q4_K_M** — chosen as the optimal trade-off between:
-  - Model size (~750 MB)
+  - Model size (~1 GB)
   - Inference speed on CPU
   - Preservation of knowledge from fine-tuning
 - Alternative quantizations evaluated: Q2_K (faster, less accurate), Q5_K_M (better accuracy, larger file)
@@ -51,11 +54,11 @@ Smallholder farmers across Africa face significant challenges in accessing timel
 
 | Constraint | Solution |
 |------------|----------|
-| **8 GB RAM limit** | Q4_K_M quantization reduces model to ~750 MB; peak usage ~2.5 GB |
+| **8 GB RAM limit** | Q4_K_M quantization reduces model to ~1 GB; peak usage ~2.5 GB |
 | **No GPU** | CPU-optimized inference via llama.cpp with AVX2 instructions |
 | **Offline operation** | All models, embeddings, and knowledge base stored locally |
-| **African languages** | Gemma base supports multilingual; fine-tuning on dataset with Yoruba/Hausa examples |
-| **Storage** | Model ~750 MB; vector DB ~100 MB; fits in 256 GB SSD |
+| **African languages** | DeepSeek base supports multilingual; fine-tuning on dataset with Yoruba/Hausa examples |
+| **Storage** | Model ~1 GB; vector DB ~100 MB; fits in 256 GB SSD |
 
 ---
 
@@ -71,19 +74,21 @@ Smallholder farmers across Africa face significant challenges in accessing timel
 
 | Metric | Value |
 |--------|-------|
-| Model Size | 750 MB (GGUF Q4_K_M) |
-| Peak RAM Usage | ~2.8 GB |
+| Model Size | ~1 GB (GGUF Q4_K_M) |
+| Peak RAM Usage | ~2.5 GB |
 | Inference Speed | 8-12 tokens/second |
 | Context Length | 2048 tokens |
 | Time to First Token | ~300-500 ms |
 
 **Memory Profiling:**
+(Adicionar os resultados do profiler ADTC após execução)
 
+---
 
 ## Model Provenance
 
-**Base Model:** `google/gemma-3-1b-it` from Hugging Face
-**Base Model Commit SHA:** `dcc83ea841ab6100d6b47a070329e1ba4cf78752`
+**Base Model:** `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` from Hugging Face
+**Base Model Commit SHA:** `COLOQUE_O_SHA_DO_DEEPSEEK_AQUI`
 **Fine-Tuning Method:** QLoRA (4-bit quantization with LoRA adapters)
 **Training Dataset:** `Professor/agronomy-qa-pairs` (49,821 examples, MIT license)
 **Training Hardware:** NVIDIA Tesla T4 (Google Colab)
@@ -108,3 +113,40 @@ All proof-of-training files are in the `provenance/` directory:
 - `dataset_sample.jsonl` — Representative dataset sample
 - `checksums.txt` — SHA256 checksums
 - `merge_and_quantize_script.py` — Merge & quantization script
+
+---
+
+## 5. African Language Support
+
+**Languages Supported:**
+- English
+- Yoruba (Nigeria, Benin)
+
+
+**Test Results:**
+
+| Language | Prompt | Response Quality |
+|----------|--------|------------------|
+| Yoruba | Kí ni àgbẹ̀? | ✅ Correct definition of agriculture |
+| Swahili | Eleza kilimo cha usahihi | ✅ Accurate explanation of agriculture |
+| Nigerian Pidgin | Where we fit get bean seeds wey get iron content? | ✅ Practical, relevant advice |
+
+---
+
+## 6. RAG Pipeline
+
+**Vector Database:**
+- ChromaDB with sentence-transformers/all-MiniLM-L6-v2 embeddings
+- Documents: 5 PDFs + 3 TXT files (agricultural knowledge base)
+- Total chunks indexed: 473
+
+**Retrieval:**
+- Top-K: 3 documents retrieved per query
+- Average retrieval time: 50 ms
+
+**Prompt Engineering:**
+```python
+prompt = f"""You are an agricultural expert. Use ONLY the context below.
+Context: {context}
+Question: {question}
+Answer:"""

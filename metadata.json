@@ -25,14 +25,15 @@
     }
   ],
   "model": {
-    "name": "gemma-agronomy-Q4_K_M",
+    "name": "deepseek-agronomy-Q4_K_M",
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "1.1B",
+    "parameters_estimate": "1.5B",
     "packaging": "binary_bundle",
-    "base_model_commit_sha": "dcc83ea841ab6100d6b47a070329e1ba4cf78752"
+    "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model_commit_sha": "COLOQUE_O_SHA_DO_DEEPSEEK_AQUI"
   },
   "_runtime": {
-    "model_path": "model/gemma-agronomy-Q4_K_M.gguf"
+    "model_path": "model/deepseek-agronomy-Q4_K_M.gguf"
   }
 }

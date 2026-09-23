@@ -1,2 +1,9 @@
-feec3347be5b84a0be639ae789786cc2e11193956be25e802308ada869892601  model/gemma-agronomy-Q4_K_M.gguf
-0b29cffbc4b6690cb177ea968f6af055e3c2c3c566da223eeba5f069d868450a  provenance/adapter_model.safetensors
+# Quantized Model Q4_K_M
+52c52aae5c23064f1e93bb5e9ecc658171e0575c2ec8f941a8b70b75ed13cde8  ./deepseek-agronomy-Q4_K_M.gguf
+
+# F16 Model
+dc311401325beb3b3d4168665a4c8d69728cb5fca6a8a248e8cd4f97c56c5592  ./deepseek-agronomy-f16.gguf
+
+# LoRa Adaptor
+5a1286654382fc4f71cef35b45abde0c5781b181c37eb82ff2a6dc55ab293d9e  /content/drive/MyDrive/ADTC_2026_models/provenance/lora-adapters/adapter_model.safetensors
+
